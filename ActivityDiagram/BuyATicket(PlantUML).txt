@@ -1,0 +1,30 @@
+@startuml
+start
+
+:Start Ticket Purchase;
+:Select Public Transport (Bus, MRT,...);
+:Select Destination;
+:Select Ticket Type (Adult/Student/Senior);
+:Select Ticket Quantity;
+:Confirm Selection;
+
+:Choose Payment Method;
+if (QR Code/Digital Wallet or Credit Card ?) then (yes)
+  :Generate QR Code;
+  :Scan QR with Mobile App;
+  :Wait for Payment Confirmation;
+else (no)
+  :Insert Cash or Swipe Card;
+  :Process Payment;
+endif
+
+if (Payment Successful?) then (yes)
+  :Print or Send Receipt;
+  :Dispense Ticket(s);
+else (no)
+  :Display Error Message;
+  :Allow Retry or Cancel;
+endif
+
+stop
+@enduml

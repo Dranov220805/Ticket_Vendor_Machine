@@ -1,0 +1,25 @@
+@startuml
+start
+
+:Initiate Payment Request;
+:Send Payment Info to Selected Provider;
+
+partition "MoMo/VNPay/ZaloPay" {
+  :Receive Payment Info;
+  :Authenticate User;
+  :Authorize Payment;
+  :Send Response (Success/Failure);
+}
+
+:Receive Payment Status;
+
+if (Payment Success?) then (yes)
+  :Update Transaction Status;
+  :Notify Ticketing System;
+else (no)
+  :Log Failure;
+  :Notify User;
+endif
+
+stop
+@enduml

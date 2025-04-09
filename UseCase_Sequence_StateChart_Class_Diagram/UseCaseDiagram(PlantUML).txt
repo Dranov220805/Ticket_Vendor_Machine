@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+
+actor "Passenger" as passenger
+actor "Payment System" as payment
+actor "Ticket Machine" as machine
+
+rectangle "Automated Ticket-Issuing System" {
+  usecase "Start Transaction" as UC1
+  usecase "Select Destination" as UC2
+  usecase "Choose Payment Method" as UC3
+  usecase "Pay with Credit Card" as UC4
+  usecase "Pay with QR Code/Digital Wallet" as UC5
+  usecase "Validate Payment" as UC6
+  usecase "Issue Paper Ticket" as UC7
+  usecase "Display QR Code for Mobile Payment" as UC8
+  usecase "Complete Transaction" as UC9
+  usecase "Cancel Transaction" as UC10
+  usecase "Select Public Transportation" as UC12
+}
+
+passenger --> UC1
+passenger --> UC2
+passenger --> UC3
+passenger --> UC4
+passenger --> UC5
+passenger --> UC10
+
+UC1 ..> UC12 : <<include>>
+UC12 ..> UC2 : <<include>>
+UC2 ..> UC3 : <<include>>
+UC3 ..> UC4 : <<extend>>
+UC3 ..> UC5 : <<extend>>
+UC4 ..> UC6 : <<include>>
+UC5 ..> UC8 : <<include>>
+UC6 ..> UC7 : <<include>>
+UC8 ..> UC7 : <<include>>
+UC7 ..> UC9 : <<include>>
+
+payment --> UC6
+machine --> UC7
+machine --> UC8
+
+@enduml
