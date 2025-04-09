@@ -1,0 +1,51 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Architecture Design of Public Transport Ticket Issuing System
+
+Person(passenger, "Passenger", "User of the ticket system")
+
+System_Boundary(ticket_system, "Automated Ticket Issuing System") {
+    Container(ui_container, "User Interface Layer", "Touchscreen Interface", "Handles user interactions and display")
+    Container(business_logic, "Business Logic Layer", "Core Application", "Manages the ticket issuing workflow")
+    Container(payment_processing, "Payment Processing Layer", "Payment Handler", "Manages different payment methods")
+    Container(device_control, "Device Control Layer", "Hardware Interface", "Controls physical components")
+    
+    Component(destination_manager, "Destination Manager", "Java", "Manages available destinations and fares")
+    Component(public_transport_manager, "Public Transport Manager", "Java", "Manages avaialbe public vehicles on the destinated route")
+    Component(payment_gateway, "Payment Gateway", "Java/C++", "Interfaces with external payment systems")
+    Component(ticket_generator, "Ticket Generator", "C++", "Creates and prints tickets")
+    Component(qr_generator, "QR Code Generator", "C++", "Generates QR codes for digital payments")
+    Component(card_reader, "Card Reader Controller", "C/C++", "Controls the physical card reader")
+    Component(printer, "Printer Controller", "C/C++", "Controls the ticket printer")
+    Component(display, "Display Controller", "C++", "Controls the touch screen display")
+    Component(local_db, "Local Database", "SQLite", "Stores transaction data temporarily")
+}
+
+System_Ext(payment_system, "External Payment System", "Processes credit card and digital wallet payments")
+System_Ext(central_server, "Central Management Server", "Manages system updates and data synchronization")
+System_Ext(mobile_app, "Mobile Payment App", "Used by passengers for QR code payments")
+
+Rel(passenger, ui_container, "Interacts with")
+Rel(ui_container, business_logic, "Sends user selections to")
+Rel(business_logic, payment_processing, "Requests payment processing")
+Rel(payment_processing, device_control, "Controls hardware components")
+
+Rel(business_logic, destination_manager, "Uses")
+Rel(business_logic, public_transport_manager, "Uses")
+Rel(business_logic, local_db, "Stores/retrieves data")
+Rel(payment_processing, payment_gateway, "Uses")
+Rel(payment_gateway, payment_system, "Validates payments with", "HTTPS")
+Rel(device_control, card_reader, "Controls")
+Rel(device_control, printer, "Controls")
+Rel(device_control, display, "Controls")
+Rel(device_control, qr_generator, "Uses")
+Rel(device_control, ticket_generator, "Uses")
+
+Rel(business_logic, central_server, "Syncs data with", "HTTPS")
+Rel(payment_system, mobile_app, "Processes payments from")
+Rel(mobile_app, qr_generator, "Scans QR code from")
+
+@enduml

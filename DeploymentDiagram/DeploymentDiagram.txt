@@ -1,0 +1,84 @@
+@startuml
+!define RECTANGLE class
+
+skinparam node {
+  backgroundColor #lightblue
+  borderColor #blue
+}
+
+skinparam database {
+  backgroundColor #lightpink
+  borderColor #red
+}
+
+skinparam component {
+  backgroundColor #lightgreen
+  borderColor #green
+}
+
+skinparam device {
+  backgroundColor #lightyellow
+  borderColor #yellow
+}
+
+node "Ticket Vending Machine" {
+  component "User Interface Module" as UI
+  component "Payment Processing Module" as PPM
+  component "Ticket Generation Module" as TGM
+  component "System Control Module" as SCM
+  database "Local Cache DB" as LocalDB
+  
+  UI -- SCM
+  SCM -- PPM
+  SCM -- TGM
+  SCM -- LocalDB
+}
+
+node "Central Server" {
+  component "Transaction Management System" as TMS
+  component "Route & Fare Management" as RFM
+  component "Analytics & Reporting" as AR
+  database "Transaction DB" as TransDB
+  database "Route & Fare DB" as RouteDB
+  
+  TMS -- TransDB
+  RFM -- RouteDB
+  TMS -- AR
+}
+
+node "Payment Gateway" {
+  component "Credit Card Processor" as CCP
+  component "Digital Wallet Processor" as DWP
+  database "Payment Log DB" as PaymentDB
+  
+  CCP -- PaymentDB
+  DWP -- PaymentDB
+}
+
+node "Mobile App Server" {
+  component "API Gateway" as API
+  component "Mobile Authentication" as MA
+  database "User Account DB" as UserDB
+  
+  API -- MA
+  MA -- UserDB
+}
+
+device "Passenger Mobile Phone" {
+  component "Transport App" as App
+}
+
+cloud "Banking Network" {
+  component "Banking Systems" as BS
+}
+
+PPM -- CCP : HTTPS
+PPM -- DWP : HTTPS
+TGM -- TMS : TCP/IP
+SCM -- RFM : TCP/IP
+App -- API : HTTPS
+DWP -- App : QR Code
+BS -- CCP : Secure Channel
+BS -- DWP : Secure Channel
+
+@enduml
