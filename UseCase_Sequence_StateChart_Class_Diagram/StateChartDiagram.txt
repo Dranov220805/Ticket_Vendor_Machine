@@ -1,0 +1,22 @@
+@startuml
+[*] --> Idle
+
+Idle --> SelectingDestination : Start Session
+SelectingDestination --> SelectingPublicTransport : Destination Selected
+SelectingPublicTransport --> SelectingTicketType: Vehicle Selected
+SelectingTicketType --> SelectingQuantity : Ticket Type Selected
+SelectingQuantity --> ConfirmingSelection : Quantity Selected
+ConfirmingSelection --> SelectingPaymentMethod : Confirmed
+SelectingPaymentMethod --> ProcessingPayment : Method Selected
+
+ProcessingPayment --> PrintingTicket : Payment Success
+ProcessingPayment --> ErrorState : Payment Failed
+
+PrintingTicket --> PrintingReceipt : Ticket Printed
+PrintingReceipt --> DispensingItems : Receipt Printed
+DispensingItems --> Idle : Ticket & Receipt Dispensed
+
+ErrorState --> SelectingPaymentMethod : Retry
+ErrorState --> Idle : Cancel
+
+@enduml

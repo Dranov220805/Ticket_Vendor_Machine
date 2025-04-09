@@ -26,11 +26,10 @@ passenger --> UC3
 passenger --> UC4
 passenger --> UC5
 passenger --> UC10
-passenger --> UC12
 
-UC1 ..> UC2 : <<include>>
-UC2 ..> UC12 : <<include>>
-UC12 ..> UC3 : <<include>>
+UC1 ..> UC12 : <<include>>
+UC12 ..> UC2 : <<include>>
+UC2 ..> UC3 : <<include>>
 UC3 ..> UC4 : <<extend>>
 UC3 ..> UC5 : <<extend>>
 UC4 ..> UC6 : <<include>>

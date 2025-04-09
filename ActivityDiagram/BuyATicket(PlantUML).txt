@@ -2,8 +2,8 @@
 start
 
 :Start Ticket Purchase;
-:Select Public Transport (Bus, MRT,...);
 :Select Destination;
+:Select Public Transport (Bus, MRT,...);
 :Select Ticket Type (Adult/Student/Senior);
 :Select Ticket Quantity;
 :Confirm Selection;

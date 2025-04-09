@@ -1,0 +1,33 @@
+@startuml
+actor Passenger
+participant "TicketVendorMachine" as TVM
+participant "PaymentProcessor" as PP
+participant "TicketPrinter" as TP
+participant "ReceiptSystem" as RS
+
+Passenger -> TVM: Start Buy Ticket
+TVM -> Passenger: Display Destination Options
+Passenger -> TVM: Select Destination
+TVM -> Passenger: Display Public Transport Options
+Passenger -> TVM: Select Public Transport
+TVM -> Passenger: Display Ticket Types
+Passenger -> TVM: Select Type & Quantity
+TVM -> Passenger: Show Fare & Confirm
+Passenger -> TVM: Confirm
+
+TVM -> Passenger: Choose Payment Method
+Passenger -> TVM: Select Payment Method
+TVM -> PP: Initiate Payment
+
+PP -> TVM: Payment Status (Success/Fail)
+alt Payment Success
+    TVM -> TP: Print Ticket(s)
+    TP --> TVM: Ticket Dispensed
+    TVM -> RS: Generate Receipt
+    RS --> TVM: Receipt Ready
+    TVM -> Passenger: Dispense Ticket & Receipt
+else Payment Fail
+    TVM -> Passenger: Display Error, Allow Retry
+end
+
+@enduml
