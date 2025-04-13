@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="ChooseDestination.cs">
+    <Compile Update="Destination\ChooseDestination.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChoosePaymentMethod.cs">
+    <Compile Update="PaymentMethod\CreditCard\CardValidation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ChoosePublicTransport.cs">
+    <Compile Update="PaymentMethod\ChoosePaymentMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PublicTransport\ChoosePublicTransport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Getstarted.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PaymentMethod\CreditCardMethod.cs">
+    <Compile Update="PaymentMethod\CreditCard\CreditCardMethod.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PaymentMethod\QRCodeMethod.cs">
+    <Compile Update="PaymentMethod\QRCode\QRCodeMethod.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
