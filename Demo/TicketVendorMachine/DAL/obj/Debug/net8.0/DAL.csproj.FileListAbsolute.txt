@@ -1,0 +1,15 @@
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\bin\Debug\net8.0\DAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\bin\Debug\net8.0\DAL.pdb
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.pdb
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\DAL\obj\Debug\net8.0\ref\DAL.dll

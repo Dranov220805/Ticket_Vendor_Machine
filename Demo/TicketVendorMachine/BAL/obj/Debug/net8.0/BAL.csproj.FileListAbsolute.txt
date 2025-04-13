@@ -1,0 +1,16 @@
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\bin\Debug\net8.0\BAL.deps.json
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\bin\Debug\net8.0\BAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\bin\Debug\net8.0\BAL.pdb
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\bin\Debug\net8.0\DAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\bin\Debug\net8.0\DAL.pdb
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.csproj.AssemblyReference.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.AssemblyInfoInputs.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.AssemblyInfo.cs
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.csproj.CoreCompileInputs.cache
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.sourcelink.json
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.csproj.Up2Date
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\refint\BAL.dll
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\BAL.pdb
+D:\HK4\Software Engineering\Assignment\Assignment_1\Ticket_Vendor_Machine\Demo\TicketVendorMachine\BAL\obj\Debug\net8.0\ref\BAL.dll
